@@ -1,0 +1,102 @@
+@media (max-width: 900px) {
+  :root {
+    --sidebar-width: 72px;
+  }
+
+  .sidebar {
+    width: 72px;
+  }
+
+  .sidebar__name,
+  .sidebar__section-label,
+  .sidebar__chat-title,
+  .sidebar__footer,
+  .sidebar__chat-icon,
+  .sidebar__delete-btn {
+    display: none;
+  }
+
+  .sidebar__inner {
+    padding: 1rem 0.5rem;
+    align-items: center;
+  }
+
+  .sidebar__btn {
+    justify-content: center;
+    width: 48px;
+    padding: 0.65rem;
+    font-size: 0;
+  }
+
+  .sidebar__btn--primary .sidebar__btn-icon {
+    font-size: 1.25rem;
+  }
+
+  .sidebar__chat-btn {
+    justify-content: center;
+    width: 48px;
+    min-width: 48px;
+    padding: 0.55rem;
+  }
+
+  .sidebar__chat-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sidebar__actions .sidebar__btn {
+    width: 48px;
+    height: 48px;
+    font-size: 0.65rem;
+    text-align: center;
+    line-height: 1.2;
+    padding: 0.35rem;
+  }
+
+  .app__header {
+    padding: 0 1rem;
+  }
+
+  .app__title {
+    max-width: 45vw;
+    font-size: 0.95rem;
+  }
+
+  .chat-window__scroll {
+    padding: 1rem;
+  }
+
+  .message-input__hint {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .chat-window__empty {
+    margin: 2rem auto;
+  }
+
+  .chat-window__empty h2 {
+    font-size: 1.35rem;
+  }
+
+  .chat-window__suggestions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .message {
+    gap: 0.625rem;
+  }
+
+  .message__avatar {
+    width: 32px;
+    height: 32px;
+    font-size: 0.7rem;
+  }
+
+  .message-input {
+    padding: 0 0.75rem 0.75rem;
+  }
+}
